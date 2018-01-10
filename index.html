@@ -1,0 +1,75 @@
+<html>
+<body>
+	<head>
+			<link rel="stylesheet" type="text/css" href="animation.css">
+	<style>
+		div {
+			width: 100px;
+			height: 80px;
+			background: red;
+		}
+
+		div:hover{
+			width: 100px;
+			height: 80px;
+			background-color: blue;
+			transition-duration: 2s;
+			transition-delay: 0.5s;
+			animation-duration: 2s;
+			position: relative;
+			animation-direction: alternate-reverse;
+			animation-iteration-count: infinite;
+			position: relative;
+		}
+
+		@keyframes bigger {
+			from {
+			  transform: scale(0.5);
+			}
+
+			to {
+		     transform: scale(2);
+			}
+		}
+
+		@keyframes mymove {
+			from {top: 20px}
+			to {top: 200px}
+      }
+
+      #hello {
+      	animation-name: bigger;
+      	animation-duration: 1s;
+      	animation-direction: alternate;
+      	animation-iteration-count: infinite;
+      }
+
+      #hello2 {
+      	animation-name: mymove;
+      	animation-duration: 4s;
+      	animation-direction:alternate;
+      	animation-iteration-count: infinite;
+      }
+
+	</style>
+
+
+	<form>
+		<font color="white"> 
+			<p> What car brands do you like most? </p>
+			<input type="radio" name="car" value="Toyota" checked> Toyota <br>
+			<input type="radio" name="car" value="Honda"> Honda <br>
+			<input type="radio" name="car" value="Mercedes"> Mercedes <br>
+		</font>
+	</form>
+
+	<br />
+	<br />
+	<div id= "hello"> </div>
+	<br />
+	<br />
+	<br />
+	<div id="hello2"> </div>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+body
+{
+	animation-name: moon1;
+	animation-direction: alternate-reverse;
+	animation-duration: 6s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out; 
+}
+@keyframes moon1 {
+	from {
+		background-image: url("http://www.hotelroomsearch.net/im/hotels/gb/half-moon-20.jpg")
+		  }
+ 	to    {
+ 		background-image: url("https://static.pexels.com/photos/301599/pexels-photo-301599.jpeg");
+ 		  }
+
+}
